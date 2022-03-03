@@ -22,5 +22,31 @@ The task is to create a computer program that will play the game as one of the p
 Maps are generated depending on the round of the competition. The closer you get to the finals, the harder the map gets. The map is fair to all players.
 
 
+![alt text](https://github.com/Una865/Artificial-Intelligence-BattleGround-Bot/blob/main/Map.png)
+
+## Fields:
+**1.Normal:**
+here players can move. However, vortex-shaped obstacle can also be found in the field, as well as pirates.
+**2.Island**
+there is an island in this field. The islands are impassable. There may be a shop or a flag on the island.
+
+The map is generated based on the JSON sent by the server. The following are examples of fields that can be found on the map. If the field is normal, a vortex or nothing can be found on it. In each field on the map you can find:
+- boat (avatar or NPC)
+- shop
+- islandflag
+- vortex
+
+**Player number one starts the game with coordinates (-7, -7.14), player number two with coordinates (14, -7, -7), player number three with coordinates (7.7, -14) and player number four with coordinates (-14,7,7).
+At the beginning of the game, two NPCs are also created on the map. They circle a fixed radius from the center of the map until they see one of the players, after which they start chasing them. If a player manages to escape them, they return to their course by the shortest route.**
+
+## Coordinate system
+
+The map uses an offset coordinate system based on offsets from the main diagonals. The three coordinates that are tracked are:
+- q : marks the offset from the main diagonal;
+- r : marks the offset from the midline;
+- s : marks the offset from the side diagonal;
+**An important feature of this coordinate system is always valid q + r + s = 0**
+ 
+
 
  
