@@ -46,6 +46,10 @@ The map uses an offset coordinate system based on offsets from the main diagonal
 - r : marks the offset from the midline;
 - s : marks the offset from the side diagonal;
 **An important feature of this coordinate system is always valid q + r + s = 0**
+
+
+
+
  
 
 
